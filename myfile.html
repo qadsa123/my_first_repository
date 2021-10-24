@@ -11,7 +11,8 @@
     <p>Here is some text</p>
     <p>Here is more text</p>
     <p>Here is some extra text</p>
-    <p>last Paraghraph</p>
+    <p class="special">last Paraghraph</p>
+
     <script>
 
       var ps =  document.getElementsByTagName('p');
@@ -21,6 +22,8 @@
           ps[i].style.color= "red";
           alert('showing paragraph ${i}')
       }
+      var myClass = document.getElementsByClassName('special');
+      myClass[0].style.color = "red";
     </script>
 </body>
 </html>
